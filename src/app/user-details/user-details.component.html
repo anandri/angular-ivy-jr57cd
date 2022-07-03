@@ -1,0 +1,28 @@
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td>{{ userDetails?.name }}</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>{{ userDetails.email }}</td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td>{{ userDetails.phone }}</td>
+    </tr>
+    <tr>
+      <td>Address</td>
+      <td>
+        {{ userDetails.address.street }},{{ userDetails.address.city }},{{
+          userDetails.address.zipcode
+        }}
+      </td>
+    </tr>
+    <tr>
+      <td>Website</td>
+      <td>{{ userDetails.website }}</td>
+    </tr>
+  </tbody>
+</table>

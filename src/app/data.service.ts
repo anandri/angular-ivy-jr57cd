@@ -7,4 +7,9 @@ export class DataService {
   public getUserList() {
     return this.httpClient.get('https://jsonplaceholder.typicode.com/users');
   }
+  public getUserDetails(id) {
+    return this.httpClient.get(
+      `https://jsonplaceholder.typicode.com/users/${id}`
+    );
+  }
 }
